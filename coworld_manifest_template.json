@@ -11,7 +11,7 @@
       "image": "{{FLATLAND_IMAGE}}",
       "run": ["/bin/flatland"],
       "env": {},
-      "source_url": "https://github.com/Metta-AI/cogame-flatland/tree/main"
+      "source_url": "https://github.com/softmax-universe/cogame-flatland/tree/main"
     },
     "replay_viewer": {
       "bundle": "static-replay-viewer"
@@ -19,17 +19,17 @@
     "protocols": {
       "player": {
         "type": "uri",
-        "value": "https://github.com/Metta-AI/cogame-flatland/blob/main/docs/PROTOCOL.md"
+        "value": "https://github.com/softmax-universe/cogame-flatland/blob/main/docs/PROTOCOL.md"
       },
       "global": {
         "type": "uri",
-        "value": "https://github.com/Metta-AI/cogame-flatland/blob/main/docs/PROTOCOL.md"
+        "value": "https://github.com/softmax-universe/cogame-flatland/blob/main/docs/PROTOCOL.md"
       }
     },
     "docs": {
       "readme": {
         "type": "uri",
-        "value": "https://github.com/Metta-AI/cogame-flatland/blob/main/README.md"
+        "value": "https://github.com/softmax-universe/cogame-flatland/blob/main/README.md"
       },
       "pages": [
         {
@@ -37,7 +37,7 @@
           "title": "Rules",
           "content": {
             "type": "uri",
-            "value": "https://github.com/Metta-AI/cogame-flatland/blob/main/docs/RULES.md"
+            "value": "https://github.com/softmax-universe/cogame-flatland/blob/main/docs/RULES.md"
           }
         },
         {
@@ -45,7 +45,7 @@
           "title": "Dispatching and the network",
           "content": {
             "type": "uri",
-            "value": "https://github.com/Metta-AI/cogame-flatland/blob/main/docs/DISPATCHING.md"
+            "value": "https://github.com/softmax-universe/cogame-flatland/blob/main/docs/DISPATCHING.md"
           }
         },
         {
@@ -53,7 +53,7 @@
           "title": "Porting Flatland",
           "content": {
             "type": "uri",
-            "value": "https://github.com/Metta-AI/cogame-flatland/blob/main/docs/PORTING-FLATLAND.md"
+            "value": "https://github.com/softmax-universe/cogame-flatland/blob/main/docs/PORTING-FLATLAND.md"
           }
         }
       ]
@@ -169,7 +169,7 @@
       "description": "Pure greed, no yielding: release every train as early as possible and run it. The control that answers \"did the LLM actually coordinate?\".",
       "image": "{{FLATLAND_IMAGE}}",
       "run": ["/bin/flatland-player"],
-      "source_url": "https://github.com/Metta-AI/cogame-flatland",
+      "source_url": "https://github.com/softmax-universe/cogame-flatland",
       "env": {"PLAYER_SCRIPTED": "timetable", "PLAYER_POLICY_LABEL": "timetable"},
       "resources": {
         "requests": {"cpu": "100m", "memory": "64Mi"},
@@ -183,7 +183,7 @@
       "description": "Stagger departures, side the lower-priority train of a stalled pair, and never enter a single-track section against oncoming traffic. Also the server-side fallback when an LLM seat misses its call.",
       "image": "{{FLATLAND_IMAGE}}",
       "run": ["/bin/flatland-player"],
-      "source_url": "https://github.com/Metta-AI/cogame-flatland",
+      "source_url": "https://github.com/softmax-universe/cogame-flatland",
       "env": {"PLAYER_SCRIPTED": "yielder", "PLAYER_POLICY_LABEL": "yielder"},
       "resources": {
         "requests": {"cpu": "100m", "memory": "64Mi"},
